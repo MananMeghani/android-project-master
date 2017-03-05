@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+
+   >
+ 
+    <TextView
+        android:id="@+id/txtSpeechInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Speech To Text"
+        android:textStyle="normal"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+ 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@null"
+        android:src="@drawable/ic_launcher"
+        android:longClickable="false"
+
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="normal"
+        android:id="@+id/textView"
+
+        android:text="Blind app"
+        android:layout_below="@+id/btnSpeak"
+        android:layout_centerHorizontal="true" />
+
+
+>
+</RelativeLayout>
